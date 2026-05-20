@@ -1,0 +1,157 @@
+:root {
+  --bs-primary: #4f46e5;
+  --bs-primary-rgb: 79, 70, 229;
+  --bs-info: #0ea5e9;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="light"] body {
+  background-color: #f3f4f6;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sidebar & Layout */
+.sidebar {
+  min-height: calc(100vh - 56px); /* subtract navbar height */
+}
+
+.hover-bg-light:hover {
+  background-color: #f8f9fa;
+}
+
+/* Cards UI Improvements */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:not(.border-0) {
+  border-color: #e5e7eb;
+}
+
+.student-card:hover, .product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Login/Register Page Background */
+.login-bg {
+  background: linear-gradient(135deg, #4f46e5 0%, #0ea5e9 100%);
+}
+
+.login-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: #e0e7ff;
+  border-radius: 50%;
+}
+
+/* Corporate Theme (Navy & Orange) */
+.corporate-theme {
+  --bs-primary: #002147; /* Lacivert */
+  --bs-primary-rgb: 0, 33, 71;
+  --bs-warning: #FF8C00; /* Turuncu */
+  --bs-warning-rgb: 255, 140, 0;
+  --bs-body-bg: #FFFFFF;
+}
+
+.corporate-theme .navbar {
+  background-color: #002147 !important;
+}
+
+.corporate-theme .navbar-brand .text-primary {
+  color: #FF8C00 !important;
+}
+
+.corporate-theme .sidebar {
+  background-color: #f8fafc !important;
+  border-right: 1px solid #e2e8f0 !important;
+}
+
+.corporate-theme .sidebar .nav-link.active {
+  background-color: #002147 !important;
+  color: #FFFFFF !important;
+}
+
+.corporate-theme .btn-primary {
+  background-color: #002147;
+  border-color: #002147;
+}
+
+.corporate-theme .btn-warning {
+  background-color: #FF8C00;
+  border-color: #FF8C00;
+  color: white;
+}
+
+.corporate-theme .card-header {
+  background-color: #002147 !important;
+  color: white !important;
+}
+
+/* Flashing Announcement */
+.flash-announcement {
+  animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+  from { opacity: 0.7; background-color: #ffc107; }
+  to { opacity: 1; background-color: #ff5722; color: white; }
+}
+
+[data-bs-theme="dark"] .bg-light {
+  background-color: #2b3035 !important;
+  color: #dee2e6 !important;
+}
+
+[data-bs-theme="dark"] .card-header.bg-white {
+  background-color: transparent !important;
+}
+
+[data-bs-theme="dark"] .text-dark {
+  color: #f8f9fa !important;
+}
+
+[data-bs-theme="dark"] .table-light {
+  --bs-table-bg: #343a40;
+  --bs-table-color: #f8f9fa;
+}
+
+.pop-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  background: linear-gradient(45deg, #f1c40f, #e67e22);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
