@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1777481928743,
+    "category": "Sistem",
+    "message": "Yeni Giriş: admin kullanıcısı Windows 10 - Chrome üzerinden (::1) giriş yaptı.",
+    "type": "info",
+    "createdAt": "2026-04-29T16:58:48.743Z",
+    "isRead": false
+  },
+  {
+    "id": 1777477739630,
+    "category": "Öğrenci",
+    "message": "YÜKSEK HARCAMA: seyfeddin  onur tek seferde 125 TL harcadı!",
+    "type": "danger",
+    "createdAt": "2026-04-29T15:48:59.630Z",
+    "isRead": true
+  },
+  {
+    "id": 1,
+    "category": "Sistem",
+    "message": "Kantin Yönetim Sistemi Başlatıldı.",
+    "type": "info",
+    "createdAt": "2026-04-29T15:48:20.931Z",
+    "isRead": true
+  }
+]
